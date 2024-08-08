@@ -1,5 +1,5 @@
 {
-  "name": "use-download-files",
+  "name": "use-download-files-hooks",
   "version": "1.0.0",
   "description": "A React TypeScript package to download files",
   "main": "lib/index.js",
@@ -36,6 +36,10 @@
   ],
   "author": "Ahmed nasser",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AhmedNnasser11/use-download-files"
+  },
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "@types/react": "^18.0.27",
