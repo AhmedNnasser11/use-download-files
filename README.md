@@ -1,5 +1,5 @@
 
-# My Custom Hooks Package
+# Custom Hooks Package
 
 This package provides custom hooks for downloading files and exporting images.
 
@@ -8,7 +8,7 @@ This package provides custom hooks for downloading files and exporting images.
 To install the package, run:
 
 ```bash
-npm install my-custom-hooks
+npm install use-download-files
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ This hook allows you to download a file from a given URL.
 
 ```typescript
 import React from 'react';
-import { useDownloadFile } from 'my-custom-hooks';
+import { useDownloadFile } from 'use-download-files';
 
 const MyComponent = () => {
   const requestFunction = () => fetch('https://example.com/file');
@@ -48,7 +48,7 @@ This hook allows you to export an image from a given URL.
 
 ```typescript
 import React from 'react';
-import { useExportImage } from 'my-custom-hooks';
+import { useExportImage } from 'use-download-files';
 
 const MyImageComponent = () => {
   const exportFunction = () => fetch('https://example.com/image');
