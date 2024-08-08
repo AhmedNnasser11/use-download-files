@@ -1,7 +1,9 @@
 
 # use-download-files
 
-This package provides Tow custom hooks for downloading files and exporting images For Reactjs and Nextjs App.
+This package provides two custom hooks for downloading files and exporting images for Reactjs and Nextjs apps.
+
+[LinkedIn Profile](https://www.linkedin.com/in/ahmed-nasser-931490212/) | [CodeSandbox Example](https://codesandbox.io/p/sandbox/export-files-32ckc5?file=%2Fsrc%2FApp.tsx%3A18%2C39)
 
 ## Installation
 
@@ -15,7 +17,17 @@ npm install use-download-files
 
 ### useDownloadFile Hook
 
-This hook allows you to download a file from a given URL.
+The `useDownloadFile` hook allows you to download a file from a given URL.
+
+#### Parameters
+
+- `requestFunction`: A function that returns a Promise resolving to the file data.
+- `name`: The name of the file to be downloaded.
+
+#### Returns
+
+- `downloadFile`: A function to initiate the file download.
+- `isPending`: A boolean indicating if the download is in progress.
 
 #### Example
 
@@ -42,7 +54,12 @@ export default MyComponent;
 
 ### useExportImage Hook
 
-This hook allows you to export an image from a given URL.
+The `useExportImage` hook allows you to export an image from a given URL.
+
+#### Returns
+
+- `elementRef`: A ref to be attached to the element to be exported.
+- `exportElement`: A function to initiate the export.
 
 #### Example
 
@@ -51,18 +68,18 @@ import React from 'react';
 import { useExportImage } from 'use-download-files';
 
 const MyImageComponent = () => {
-  const exportFunction = () => fetch('https://example.com/image');
-
-  const { exportImage, isPending } = useExportImage({ exportFunction, name: 'example-image' });
+  const { elementRef, exportElement } = useExportImage();
 
   return (
-    <div>
-      <button onClick={exportImage} disabled={isPending}>
-        {isPending ? 'Exporting...' : 'Export Image'}
-      </button>
+    <div ref={elementRef}>
+      <button onClick={exportElement}>Export Image</button>
+      <h1>Hello</h1>
+      <h3>Export this element</h3>
     </div>
   );
 };
 
 export default MyImageComponent;
 ```
+
+For a live example, check out this [CodeSandbox Example](https://codesandbox.io/p/sandbox/export-files-32ckc5?file=%2Fsrc%2FApp.tsx%3A18%2C39).
