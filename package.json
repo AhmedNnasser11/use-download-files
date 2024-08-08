@@ -1,5 +1,5 @@
 {
-  "name": "download-files-custom-hooks",
+  "name": "use-download-files",
   "version": "1.0.0",
   "description": "A React TypeScript package to download files",
   "main": "lib/index.js",
