@@ -3,6 +3,9 @@
 
 This package provides two custom hooks for downloading files and exporting images for Reactjs and Nextjs apps.
 
+For a live example, check out this [CodeSandbox Example](https://codesandbox.io/p/sandbox/export-files-32ckc5?file=%2Fsrc%2FApp.tsx%3A18%2C39).
+
+
 [LinkedIn Profile](https://www.linkedin.com/in/ahmed-nasser-931490212/) | [CodeSandbox Example](https://codesandbox.io/p/sandbox/export-files-32ckc5?file=%2Fsrc%2FApp.tsx%3A18%2C39)
 
 ## Installation
@@ -82,4 +85,3 @@ const MyImageComponent = () => {
 export default MyImageComponent;
 ```
 
-For a live example, check out this [CodeSandbox Example](https://codesandbox.io/p/sandbox/export-files-32ckc5?file=%2Fsrc%2FApp.tsx%3A18%2C39).
