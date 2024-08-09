@@ -1,6 +1,6 @@
 {
-  "name": "download-files-custom-hooks",
-  "version": "1.0.0",
+  "name": "use-export-files",
+  "version": "1.0.4",
   "description": "A React TypeScript package to download files",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -27,12 +27,12 @@
     "react-typescript-pkg",
     "typescript",
     "package",
-    "use-download-files",
+    "use-export-files",
     "download",
     "file",
     "download-files",
-    "use-download-file",
-    "use-download-files"
+    "use-export-file",
+    "use-export-files"
   ],
   "author": "Ahmed nasser",
   "license": "MIT",

@@ -1,5 +1,5 @@
 
-# use-download-files
+# use-export-files
 
 This package provides two custom hooks for downloading files and exporting images for Reactjs and Nextjs apps.
 
@@ -13,7 +13,7 @@ For a live example, check out this [CodeSandbox Example](https://codesandbox.io/
 To install the package, run:
 
 ```bash
-npm install use-download-files
+npm install use-export-files
 ```
 
 ## Usage
@@ -36,7 +36,7 @@ The `useDownloadFile` hook allows you to download a file from a given URL.
 
 ```typescript
 import React from 'react';
-import { useDownloadFile } from 'use-download-files';
+import { useDownloadFile } from 'use-export-files';
 
 const MyComponent = () => {
   const requestFunction = () => fetch('https://example.com/file');
@@ -68,7 +68,7 @@ The `useExportImage` hook allows you to export an image from a given URL.
 
 ```typescript
 import React from 'react';
-import { useExportImage } from 'use-download-files';
+import { useExportImage } from 'use-export-files';
 
 const MyImageComponent = () => {
   const { elementRef, exportElement } = useExportImage();
