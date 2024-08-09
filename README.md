@@ -40,7 +40,7 @@ import React from 'react';
 import { useDownloadFile } from 'use-export-files-hooks';
 
 const MyComponent = () => {
-  const requestFunction = () => fetch('https://example.com/file');
+  const requestFunction = () => fetch('https://jsonplaceholder.typicode.com/users');
 
   const { downloadFile, isPending } = useDownloadFile({ requestFunction, name: 'example-file' });
 
