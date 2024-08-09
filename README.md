@@ -1,12 +1,13 @@
 
 # use-export-files-hooks
 
-This package provides two custom hooks for downloading files and exporting images for Reactjs and Nextjs apps.
+This package provides two custom hooks designed for downloading files and exporting images in React.js and Next.js applications.
 
 For a live example, check out this [CodeSandbox Example](https://codesandbox.io/p/sandbox/export-files-32ckc5?file=%2Fsrc%2FApp.tsx%3A18%2C39).
 
+## Author
 
-[LinkedIn Profile](https://www.linkedin.com/in/ahmed-nasser-931490212/) | [CodeSandbox Example](https://codesandbox.io/p/sandbox/export-files-32ckc5?file=%2Fsrc%2FApp.tsx%3A18%2C39)
+[LinkedIn Profile](https://www.linkedin.com/in/ahmed-nasser-931490212/)
 
 ## Installation
 
@@ -57,8 +58,7 @@ export default MyComponent;
 
 ### useExportImage Hook
 
-The `useExportImage` hook allows you to export an image from a given URL.
-
+The useExportImage hook enables you to export an image of an element by attaching a ref to the element you want to export.
 #### Returns
 
 - `elementRef`: A ref to be attached to the element to be exported.
