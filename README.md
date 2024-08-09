@@ -75,7 +75,7 @@ const MyImageComponent = () => {
 
   return (
     <div ref={elementRef}>
-      <button onClick={exportElement}>Export Image</button>
+      <button onClick={() => exportElement("myImgName"}>Export Image</button>
       <h1>Hello</h1>
       <h3>Export this element</h3>
     </div>
